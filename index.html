@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+        
+    <li><a href="">Bill calculation</a></li>
+    <li><a href="">Bill Notification</a></li>
+    <li><a href="">users Information</a></li>
+    <li><a href="">Monthly Bill</a></li>
+    <li><a href="">Previous bill</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h1>Welcome, <?php echo htmlspecialchars($user['name']); ?>!</h1>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>User Information</h3>
+            <p><strong>Username:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+            <p><strong>Name:</strong> <?php echo htmlspecialchars($user['name']); ?></p>
+            <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+            <p><strong>Contact:</strong> <?php echo htmlspecialchars($user['contact']); ?></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
